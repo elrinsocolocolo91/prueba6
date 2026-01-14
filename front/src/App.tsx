@@ -50,7 +50,7 @@ function App() {
     }
     setLoading(true)
     try {
-      const res = await fetch(`${API_BASE}/api/calculate`, {
+      const res = await fetch(`${API_BASE}/api/calc`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ a: na, b: nb, op }),
